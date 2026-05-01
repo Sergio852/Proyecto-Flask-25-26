@@ -1,0 +1,770 @@
+{
+  "nombreEscuadron": "Escuadrón de superhéroes",
+  "ciudadNatal": "Metro City",
+  "formado": 2016,
+  "baseSecreta": "Super torre",
+  "activo": true,
+  "presupuestoMillones": 450.75,
+  "historia": [
+    "Formado en respuesta a amenazas super‑globales.",
+    "Inicialmente un pequeño equipo de tres miembros.",
+    "Se extendió gradualmente hasta una alianza internacional."
+  ],
+  "sedePrincipal": {
+    "ubicacion": {
+      "ciudad": "Metro City",
+      "pais": "EE. UU.",
+      "coordenadas": {
+        "latitud": 40.7128,
+        "longitud": -74.006,
+        "precision": "alta"
+      },
+      "direccion": {
+        "calle": "Heroes Plaza",
+        "numero": 1,
+        "codigoPostal": "10001",
+        "gpsHabilitado": true
+      }
+    },
+    "nivelSeguridad": "alta",
+    "sitiosRespaldo": [
+      {
+        "nombre": "Búnker en la montaña",
+        "alturaMetros": 2500,
+        "defensas": [
+          "artillería",
+          "láseres",
+          "escudos de energía"
+        ],
+        "activo": true,
+        "ultimaRevision": "2025-11-15",
+        "personal": [
+          {
+            "cargo": "Jefe de seguridad",
+            "nombre": "Alex Rivera",
+            "armado": true
+          },
+          {
+            "cargo": "Técnico",
+            "nombre": "Nina Patel",
+            "armado": false
+          }
+        ]
+      },
+      {
+        "nombre": "Base subterránea",
+        "profundidadMetros": 300,
+        "defensas": [
+          "murallas EMP",
+          "cerraduras biométricas"
+        ],
+        "activo": false,
+        "ultimaRevision": null,
+        "personal": []
+      }
+    ],
+    "protocolosEmergencia": [
+      {
+        "nivel": 1,
+        "accion": "Alertar a todos los miembros",
+        "canales": [
+          "radio",
+          "satélite",
+          "aplicaciones"
+        ]
+      },
+      {
+        "nivel": 2,
+        "accion": "Evacuar a los civiles",
+        "canales": [
+          "radio",
+          "noticias",
+          "aplicaciones"
+        ],
+        "riesgo": 0.85
+      }
+    ]
+  },
+  "mision": {
+    "principal": "Defender Metro City",
+    "secundaria": "Responder a emergencias globales",
+    "objetivos": [
+      "Proteger a los civiles",
+      "Contener amenazas de supervillanos",
+      "Mantener el orden público"
+    ],
+    "estado": {
+      "global": "activo",
+      "reportes": [
+        {
+          "fecha": "2024-03-01",
+          "resumen": "Amenaza mayor neutralizada",
+          "exito": true,
+          "bajas": 0
+        },
+        {
+          "fecha": "2025-01-15",
+          "resumen": "Pequeña alteración en Metro Bay",
+          "exito": true,
+          "bajas": 2
+        }
+      ]
+    }
+  },
+  "miembros": [
+    {
+      "nombre": "Hombre Molécula",
+      "edad": 29,
+      "identidadSecreta": "Dan Jukes",
+      "activo": true,
+      "habilidades": [
+        "Física",
+        "Ingeniería",
+        "Estrategia táctica"
+      ],
+      "contacto": {
+        "emails": [
+          "dan.jukes@heroes.com",
+          "molecule.man@shadow.ops"
+        ],
+        "telefonos": [
+          "+1 555 1234",
+          "+1 555 1235"
+        ],
+        "contactoPreferido": "email"
+      },
+      "poderes": [
+        "Resistencia a la radiación",
+        "Reducirse de tamaño",
+        "Disparo de radiación"
+      ],
+      "estadisticas": {
+        "fuerza": 8.5,
+        "inteligencia": 9.9,
+        "resistencia": 7.2,
+        "armadura": null
+      },
+      "misiones": [
+        {
+          "id": "M001",
+          "titulo": "Rescate de la torre de Metro",
+          "ano": 2020,
+          "exito": true,
+          "debriefing": [
+            "Los niveles de radiación eran extremadamente altos.",
+            "La evacuación de civiles se completó en menos de 15 minutos."
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Madame Uppercut",
+      "edad": 39,
+      "identidadSecreta": "Jane Wilson",
+      "activo": true,
+      "habilidades": [
+        "Combate",
+        "Liderazgo",
+        "Relaciones públicas"
+      ],
+      "contacto": {
+        "emails": [
+          "jane.wilson@heroes.com"
+        ],
+        "telefonos": [
+          "+1 555 7777"
+        ],
+        "contactoPreferido": "telefono"
+      },
+      "poderes": [
+        "Golpe de millón de toneladas",
+        "Resistencia a daños",
+        "Reflejos sobrehumanos"
+      ],
+      "estadisticas": {
+        "fuerza": 10,
+        "inteligencia": 7.5,
+        "resistencia": 9,
+        "armadura": "escudo de energía"
+      },
+      "misiones": [
+        {
+          "id": "M002",
+          "titulo": "Detener el desastre en la central eléctrica",
+          "ano": 2021,
+          "exito": true,
+          "debriefing": [
+            "El daño estructural se evitó mediante un solo puñetazo.",
+            "Cero bajas civiles."
+          ]
+        }
+      ],
+      "equipo": [
+        {
+          "nombre": "Guantes reforzados",
+          "tipo": "melee",
+          "multiplicadoresDano": {
+            "suelo": 1.5,
+            "aire": 1.2,
+            "subacuatico": 1.0
+          }
+        },
+        {
+          "nombre": "Botas de energía",
+          "tipo": "movilidad",
+          "velocidadMaxKmH": 120,
+          "nivelBateria": 0.95
+        }
+      ]
+    },
+    {
+      "nombre": "Eternal Flame",
+      "edad": 1000000,
+      "identidadSecreta": null,
+      "activo": true,
+      "habilidades": [
+        "Manipulación de energía",
+        "Guerra dimensional",
+        "Conciencia temporal"
+      ],
+      "contacto": {
+        "emails": [
+          "eternalflame@unknown.dim"
+        ],
+        "direccion": null,
+        "estado": {
+          "actual": "activo en misiones interdimensionales",
+          "vistoPorUltimaVez": "2025",
+          "dimensionesVisitadas": [
+            "Alpha",
+            "Beta",
+            "Omega"
+          ],
+          "nivelDeAmenazaObservado": 0.92
+        }
+      },
+      "poderes": [
+        "Inmortalidad",
+        "Inmunidad al calor",
+        "Infierno",
+        "Teletransportación",
+        "Viaje interdimensional"
+      ],
+      "estadisticas": {
+        "fuerza": 9.8,
+        "inteligencia": 10,
+        "resistencia": 10,
+        "armadura": "escudo plano"
+      },
+      "misiones": [
+        {
+          "id": "M003",
+          "titulo": "Cerrar la fisura dimensional",
+          "ano": 2024,
+          "exito": true,
+          "debriefing": [
+            "La fisura se estabilizó con ráfagas controladas de infierno.",
+            "Un pequeño incidente secundario en la dimensión Gamma."
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Shadow Runner",
+      "edad": 27,
+      "identidadSecreta": "Luis Vega",
+      "activo": true,
+      "habilidades": [
+        "Sigilo",
+        "Infiltración",
+        "Ciberseguridad"
+      ],
+      "contacto": {
+        "emails": [
+          "luis.vega@heroes.com",
+          "shadow.runner@blackmail.net"
+        ],
+        "telefonos": [
+          "+1 555 9876"
+        ],
+        "contactoPreferido": "email"
+      },
+      "poderes": [
+        "Invisibilidad",
+        "Sigilo mejorado",
+        "Visión nocturna"
+      ],
+      "estadisticas": {
+        "fuerza": 6,
+        "inteligencia": 8.5,
+        "resistencia": 6.5,
+        "armadura": null
+      },
+      "misiones": [
+        {
+          "id": "M004",
+          "titulo": "Infiltrarse en el Sindicato de las Sombras",
+          "ano": 2023,
+          "exito": true,
+          "debriefing": [
+            "Se recopiló información crítica sobre el Sindicato.",
+            "La extracción se realizó sin detección."
+          ]
+        }
+      ],
+      "equipo": [
+        {
+          "nombre": "Capa de las Sombras",
+          "tipo": "sigilo",
+          "energiaUsadaPorHora": 0.15,
+          "seguroRecurso": {
+            "habilitado": true,
+            "disparador": "exposición detectada",
+            "accion": "visibilidad total"
+          }
+        },
+        {
+          "nombre": "Gafas nocturnas",
+          "tipo": "vision",
+          "rangoMaxMetros": 200,
+          "modoTermico": true
+        }
+      ],
+      "notas": [
+        "Muestra tolerancia al alto riesgo.",
+        "Recomendado solo para operaciones encubiertas.",
+        null
+      ]
+    },
+    {
+      "nombre": "Capitán Rayo",
+      "edad": 31,
+      "identidadSecreta": "Mario Cruz",
+      "activo": true,
+      "habilidades": [
+        "Combate",
+        "Estrategia táctica",
+        "Liderazgo"
+      ],
+      "contacto": {
+        "emails": [
+          "capitan.rayo@heroes.com"
+        ],
+        "telefonos": [
+          "+1 555 2001"
+        ],
+        "contactoPreferido": "telefono"
+      },
+      "poderes": [
+        "Electricidad",
+        "Vuelo corto",
+        "Velocidad de reacción"
+      ],
+      "estadisticas": {
+        "fuerza": 8.2,
+        "inteligencia": 7.8,
+        "resistencia": 8.0,
+        "armadura": null
+      },
+      "misiones": [
+        {
+          "id": "M005",
+          "titulo": "Apagón en Metro City",
+          "ano": 2022,
+          "exito": true,
+          "debriefing": [
+            "Restableció la red principal.",
+            "Se evitó el caos en el centro."
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Aero Blade",
+      "edad": 26,
+      "identidadSecreta": "Clara Montes",
+      "activo": true,
+      "habilidades": [
+        "Combate",
+        "Vuelo táctico",
+        "Sigilo"
+      ],
+      "contacto": {
+        "emails": [
+          "aero.blade@heroes.com"
+        ],
+        "telefonos": [
+          "+1 555 2002"
+        ],
+        "contactoPreferido": "email"
+      },
+      "poderes": [
+        "Alas de energía",
+        "Corte aéreo",
+        "Planeo supersónico"
+      ],
+      "estadisticas": {
+        "fuerza": 7.4,
+        "inteligencia": 7.1,
+        "resistencia": 7.9,
+        "armadura": null
+      },
+      "misiones": [
+        {
+          "id": "M006",
+          "titulo": "Persecución sobre la bahía",
+          "ano": 2023,
+          "exito": true,
+          "debriefing": [
+            "Interceptó drones enemigos.",
+            "Protegió el puente principal."
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Doctor Byte",
+      "edad": 35,
+      "identidadSecreta": "Samuel Ortega",
+      "activo": true,
+      "habilidades": [
+        "Ciberseguridad",
+        "Ingeniería",
+        "Física"
+      ],
+      "contacto": {
+        "emails": [
+          "doctor.byte@heroes.com"
+        ],
+        "telefonos": [
+          "+1 555 2003"
+        ],
+        "contactoPreferido": "email"
+      },
+      "poderes": [
+        "Interfaz mental",
+        "Hackeo remoto",
+        "Pulso EMP"
+      ],
+      "estadisticas": {
+        "fuerza": 5.2,
+        "inteligencia": 9.8,
+        "resistencia": 6.4,
+        "armadura": "traje técnico"
+      },
+      "misiones": [
+        {
+          "id": "M007",
+          "titulo": "Caída del satélite espía",
+          "ano": 2024,
+          "exito": true,
+          "debriefing": [
+            "Neutralizó el acceso al satélite.",
+            "Salvó la base de datos central."
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Nova Pulse",
+      "edad": 24,
+      "identidadSecreta": "Irene Sol",
+      "activo": true,
+      "habilidades": [
+        "Manipulación de energía",
+        "Combate",
+        "Relaciones públicas"
+      ],
+      "contacto": {
+        "emails": [
+          "nova.pulse@heroes.com"
+        ],
+        "telefonos": [
+          "+1 555 2004"
+        ],
+        "contactoPreferido": "telefono"
+      },
+      "poderes": [
+        "Explosión lumínica",
+        "Escudo solar",
+        "Pulso cegador"
+      ],
+      "estadisticas": {
+        "fuerza": 8.0,
+        "inteligencia": 7.0,
+        "resistencia": 8.4,
+        "armadura": null
+      },
+      "misiones": [
+        {
+          "id": "M008",
+          "titulo": "Defensa del distrito solar",
+          "ano": 2025,
+          "exito": true,
+          "debriefing": [
+            "Bloqueó una invasión menor.",
+            "Mantuvo la zona evacuada."
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Titanio",
+      "edad": 42,
+      "identidadSecreta": "Raúl Peña",
+      "activo": false,
+      "habilidades": [
+        "Combate",
+        "Rescate",
+        "Liderazgo"
+      ],
+      "contacto": {
+        "emails": [
+          "titanio@heroes.com"
+        ],
+        "telefonos": [
+          "+1 555 2005"
+        ],
+        "contactoPreferido": "telefono"
+      },
+      "poderes": [
+        "Piel metálica",
+        "Superfuerza",
+        "Impacto sísmico"
+      ],
+      "estadisticas": {
+        "fuerza": 9.6,
+        "inteligencia": 6.9,
+        "resistencia": 9.7,
+        "armadura": "aleación viva"
+      },
+      "misiones": [
+        {
+          "id": "M009",
+          "titulo": "Defensa del ayuntamiento",
+          "ano": 2021,
+          "exito": true,
+          "debriefing": [
+            "Resistió el ataque frontal.",
+            "Protegió a los civiles atrapados."
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Lince Azul",
+      "edad": 28,
+      "identidadSecreta": "Paula Ríos",
+      "activo": true,
+      "habilidades": [
+        "Sigilo",
+        "Infiltración",
+        "Combate"
+      ],
+      "contacto": {
+        "emails": [
+          "lince.azul@heroes.com"
+        ],
+        "telefonos": [
+          "+1 555 2006"
+        ],
+        "contactoPreferido": "email"
+      },
+      "poderes": [
+        "Agilidad felina",
+        "Salto mejorado",
+        "Rastreo nocturno"
+      ],
+      "estadisticas": {
+        "fuerza": 7.1,
+        "inteligencia": 7.6,
+        "resistencia": 7.3,
+        "armadura": null
+      },
+      "misiones": [
+        {
+          "id": "M010",
+          "titulo": "Operación niebla",
+          "ano": 2022,
+          "exito": true,
+          "debriefing": [
+            "Accedió al complejo enemigo.",
+            "Recuperó pruebas sin ser vista."
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Psíquica",
+      "edad": 30,
+      "identidadSecreta": "Elena Vidal",
+      "activo": true,
+      "habilidades": [
+        "Conciencia temporal",
+        "Estrategia táctica",
+        "Liderazgo"
+      ],
+      "contacto": {
+        "emails": [
+          "psiquica@heroes.com"
+        ],
+        "telefonos": [
+          "+1 555 2007"
+        ],
+        "contactoPreferido": "email"
+      },
+      "poderes": [
+        "Telepatía",
+        "Precognición",
+        "Bloqueo mental"
+      ],
+      "estadisticas": {
+        "fuerza": 5.8,
+        "inteligencia": 9.4,
+        "resistencia": 6.7,
+        "armadura": null
+      },
+      "misiones": [
+        {
+          "id": "M011",
+          "titulo": "Predicción del colapso orbital",
+          "ano": 2024,
+          "exito": true,
+          "debriefing": [
+            "Anticipó la trayectoria del impacto.",
+            "Ayudó a evacuar la zona crítica."
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Forja",
+      "edad": 37,
+      "identidadSecreta": "Diego Hierro",
+      "activo": true,
+      "habilidades": [
+        "Ingeniería",
+        "Física",
+        "Rescate"
+      ],
+      "contacto": {
+        "emails": [
+          "forja@heroes.com"
+        ],
+        "telefonos": [
+          "+1 555 2008"
+        ],
+        "contactoPreferido": "telefono"
+      },
+      "poderes": [
+        "Control del metal",
+        "Creación de herramientas",
+        "Blindaje rápido"
+      ],
+      "estadisticas": {
+        "fuerza": 8.1,
+        "inteligencia": 8.7,
+        "resistencia": 8.3,
+        "armadura": "armadura modular"
+      },
+      "misiones": [
+        {
+          "id": "M012",
+          "titulo": "Reconstrucción del túnel central",
+          "ano": 2023,
+          "exito": true,
+          "debriefing": [
+            "Aseguró la estructura en minutos.",
+            "Salvó a decenas de atrapados."
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Tempestad",
+      "edad": 33,
+      "identidadSecreta": "Lucía Torres",
+      "activo": true,
+      "habilidades": [
+        "Manipulación de energía",
+        "Vuelo táctico",
+        "Combate"
+      ],
+      "contacto": {
+        "emails": [
+          "tempestad@heroes.com"
+        ],
+        "telefonos": [
+          "+1 555 2009"
+        ],
+        "contactoPreferido": "telefono"
+      },
+      "poderes": [
+        "Control del clima",
+        "Rayos",
+        "Corrientes de aire"
+      ],
+      "estadisticas": {
+        "fuerza": 8.3,
+        "inteligencia": 7.7,
+        "resistencia": 8.5,
+        "armadura": null
+      },
+      "misiones": [
+        {
+          "id": "M013",
+          "titulo": "Tormenta sobre Metro Bay",
+          "ano": 2025,
+          "exito": true,
+          "debriefing": [
+            "Desvió la tormenta del puerto.",
+            "Evitó daños masivos."
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Vórtice",
+      "edad": 29,
+      "identidadSecreta": "Andrés Salas",
+      "activo": true,
+      "habilidades": [
+        "Infiltración",
+        "Sigilo",
+        "Ciberseguridad"
+      ],
+      "contacto": {
+        "emails": [
+          "vortice@heroes.com"
+        ],
+        "telefonos": [
+          "+1 555 2010"
+        ],
+        "contactoPreferido": "email"
+      },
+      "poderes": [
+        "Portales cortos",
+        "Desplazamiento rápido",
+        "Desorientación espacial"
+      ],
+      "estadisticas": {
+        "fuerza": 6.4,
+        "inteligencia": 8.2,
+        "resistencia": 6.9,
+        "armadura": null
+      },
+      "misiones": [
+        {
+          "id": "M014",
+          "titulo": "Intrusión en la torre negra",
+          "ano": 2024,
+          "exito": true,
+          "debriefing": [
+            "Abrió rutas de escape.",
+            "Recuperó el núcleo robado."
+          ]
+        }
+      ]
+    }
+  ]
+}
