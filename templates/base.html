@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %}Escuadrón de Superhéroes{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <header class="cabecera">
+        <h1>Escuadrón de Superhéroes</h1>
+
+        <nav class="menu">
+            <a href="{{ url_for('index') }}">Inicio</a>
+            <a href="{{ url_for('miembros') }}">Miembros</a>
+        </nav>
+    </header>
+
+    <main class="contenido">
+        {% block contenido %}
+        {% endblock %}
+    </main>
+
+    <footer class="pie">
+        <p>Proyecto Flask de superhéroes</p>
+    </footer>
+
+</body>
+</html>
