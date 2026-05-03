@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block titulo %}Inicio{% endblock %}
+
+{% block contenido %}
+<section class="caja">
+    <h2>{{ escuadron.nombreEscuadron }}</h2>
+
+    <a href="{{ url_for('miembros') }}">
+        <img src="{{ url_for('static', filename='img/heroes.jpg') }}" alt="Logo de superhéroes" class="logo">
+    </a>
+
+    <p><strong>Ciudad:</strong> {{ escuadron.ciudadNatal }}</p>
+    <p><strong>Año de formación:</strong> {{ escuadron.formado }}</p>
+    <p><strong>Base secreta:</strong> {{ escuadron.baseSecreta }}</p>
+    <p><strong>Misión principal:</strong> {{ escuadron.mision.principal }}</p>
+
+    <p>Pulsa en la imagen para ver el listado de miembros.</p>
+</section>
+{% endblock %}
