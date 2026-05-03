@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block titulo %}Miembros{% endblock %}
+
+{% block contenido %}
+    <section class="caja">
+        <h2>Listado de miembros</h2>
+
+        <form action="{{ url_for('miembros') }}" method="get">
+            <p>
+                <label for="nombre">Buscar por nombre:</label><br>
+                <input type="text" name="nombre" id="nombre" value="{{ nombre_q }}">
+            </p>
+
+            <p>
+                <label for="habilidad">Filtrar por habilidad:</label><br>
+                <select name="habilidad" id="habilidad">
+                    <option value="">Todas</option>
+                    {% for habilidad in habilidades %}
+                        <option value="{{ habilidad }}" {% if habilidad == habilidad_q %}selected{% endif %}>
+                            {{ habilidad }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </p>
+
+            <p>
+                <label for="orden">Orden:</label><br>
+                <select name="orden" id="orden">
+                    <option value="asc" {% if orden == "asc" %}selected{% endif %}>A - Z</option>
+                    <option value="desc" {% if orden == "desc" %}selected{% endif %}>Z - A</option>
+                </select>
+            </p>
+
+            <p>
+                <button type="submit">Buscar</button>
+                <a href="{{ url_for('miembros') }}" class="boton-enlace">Limpiar</a>
+            </p>
+        </form>
+
+        <p>Resultados encontrados: {{ total }}</p>
+
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Habilidad principal</th>
+                <th>Detalle</th>
+            </tr>
+
+            {% for miembro in miembros %}
+            <tr>
+                <td>{{ miembro.nombre }}</td>
+                <td>
+                    {% if miembro.edad > 9999 %}
+                        Inmortal
+                    {% else %}
+                        {{ miembro.edad }}
+                    {% endif %}
+                </td>
+                <td>{{ miembro.habilidades[0] }}</td>
+                <td>
+                    <a href="{{ url_for('detalle', nombre=miembro.nombre) }}">Ver detalle</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </section>
+{% endblock %}
