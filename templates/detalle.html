@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block titulo %}Detalle de {{ miembro.nombre }}{% endblock %}
+
+{% block contenido %}
+    <section class="caja">
+        <h2>{{ miembro.nombre }}</h2>
+
+        <p><strong>Edad:</strong>
+            {% if miembro.edad > 9999 %}
+                Inmortal
+            {% else %}
+                {{ miembro.edad }}
+            {% endif %}
+        </p>
+
+        <p><strong>Identidad secreta:</strong>
+            {% if miembro.identidadSecreta %}
+                {{ miembro.identidadSecreta }}
+            {% else %}
+                No disponible
+            {% endif %}
+        </p>
+
+        <p><strong>Activo:</strong>
+            {% if miembro.activo %}
+                Sí
+            {% else %}
+                No
+            {% endif %}
+        </p>
+
+        <p><strong>Contacto preferido:</strong>
+            {% if miembro.contacto.contactoPreferido is defined %}
+                {{ miembro.contacto.contactoPreferido }}
+            {% else %}
+                No disponible
+            {% endif %}
+        </p>
+
+        <h3>Habilidades</h3>
+        <ul>
+            {% for habilidad in miembro.habilidades %}
+                <li>{{ habilidad }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Poderes</h3>
+        <ul>
+            {% for poder in miembro.poderes %}
+                <li>{{ poder }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Misiones</h3>
+        <ul>
+            {% for mision in miembro.misiones %}
+                <li>{{ mision.titulo }} ({{ mision.ano }})</li>
+            {% endfor %}
+        </ul>
+
+        <p><a href="{{ url_for('miembros') }}">Volver al listado</a></p>
+    </section>
+{% endblock %}
